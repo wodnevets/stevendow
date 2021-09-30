@@ -1,0 +1,116 @@
+/* Hero */
+.home {
+	background-color: var(--bg-red);
+	background-image: url(../img/hero/hero-bg-img-who.svg);
+}
+
+.about {
+	background-color: var(--bg-green);
+	background-image: url(../img/hero/hero-bg-img-what.svg);
+}
+
+.work {
+	background-color: var(--bg-blue);
+	background-image: url(../img/hero/hero-bg-img-work.svg);
+}
+
+.logo {
+	fill: var(--logo);
+}
+
+.view-height {
+	height: 100vh;
+}
+
+.home, .about, .work {
+	background-size: 23rem;
+	background-position: right -20px bottom -10px;
+	background-repeat: no-repeat;
+}
+
+.hero-bg-img-case-study-1 {
+	background-image: url(../img/case-study/case-study-1-hero-bg-img.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-border {
+	border: 9px solid #ffffff; 
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 375px) {	
+	.view-height {
+		height: auto;
+	}
+
+	.hero-bg-img-case-study-1 {
+		background-position: center center;
+	}
+}
+
+@media (min-width: 414px) {
+	.hero-bg-img-case-study-1 {
+		background-image: url(../img/case-study/case-study-1-hero-bg-img-568.jpg);
+		background-position: center bottom;	
+	}
+	.view-height {
+		height: auto;
+	}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.view-height {
+		height: auto;
+	}
+	.home, .about, .work {
+		background-size: 30rem;
+		background-position: right -20px bottom -10px;
+	}
+	.hero-bg-img-case-study-1 {
+		background-image: url(../img/case-study/case-study-1-hero-bg-img-md.jpg);
+		background-position: center bottom;
+	}
+	.hero-header {
+		font-size: 4.5rem;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.hero-bg-img-case-study-1 {
+		background-image: url(../img/case-study/case-study-1-hero-bg-img-lg.jpg);
+	}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.view-height {
+		height: 100vh;
+	}
+	.work {
+		background-size: 55rem;
+		background-position: right -44px bottom -18px;
+	}
+	.about {
+		background-size: 55rem;
+		background-position: right -48px bottom -18px;
+	}
+	.home {
+		background-size: 50rem;
+		background-position: right -50px bottom -20px;
+	}
+	.hero-bg-img-case-study-1 {
+		background-image: url(../img/case-study/case-study-1-hero-bg-img-xl.jpg);
+	}
+	.hero-header {
+		font-size: 5.5rem;
+	}
+}

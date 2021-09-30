@@ -1,0 +1,29 @@
+/* Scroll to top button  */
+.back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: var(--color-text);
+	opacity: 0.7;
+	cursor: pointer; 
+	padding: 0;
+	border-radius: 0;
+}
+
+.back-to-top:hover {
+	opacity: 0.9;
+	transition: .2s ease-in-out;
+}
+
+.back-to-top:focus, .back-to-top__content:focus {
+	outline: none;
+}
+
+.back-to-top:focus > .back-to-top__content {
+	color: #499CE9;
+}

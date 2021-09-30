@@ -1,0 +1,24 @@
+footer {
+	background-color: var(--footer-bg);
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer ul {
+	margin: 0;
+}
+
+.footer-text {
+	font-size: .9rem;
+	padding-top: .5rem;
+}

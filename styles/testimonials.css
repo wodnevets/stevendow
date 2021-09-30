@@ -1,0 +1,22 @@
+/* blockquote */
+.blockquote-footer {
+	color: #212529;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.blockquote-footer::before {
+	display: none;
+}
+
+.quote-image {
+	z-index: 1;
+	margin-top: -50px;
+	margin-left: -10px;
+}
+
+/* images */
+.testimonial-image {
+	width: 6rem;
+    height: 6rem;
+}
